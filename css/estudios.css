@@ -31,7 +31,17 @@
 /* Tableta (Pantallas medianas, entre 768px y 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .estudios {
-    width: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .container_estudios ul{
+    width: 100vw;
+    text-align: center;
+    margin-left: -50px;
+  }
+  .container_estudios li{
+    list-style: none;
   }
 }
 
