@@ -1,0 +1,48 @@
+footer {
+    text-align: center;
+    background-color: rgb(27, 62, 84);
+}
+
+.footer__contenedorInfo , .footer__copy{
+    background-color: black;
+    color: white;
+}
+
+
+.footer__contenedor{
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100vw;
+}
+
+.footer__contenedor p{
+     border: white 1px solid;
+     border-radius:15px ;
+     -webkit-border-radius:15px ;
+     -moz-border-radius:15px ;
+     -ms-border-radius:15px ;
+     -o-border-radius:15px ;
+     padding: 5px;
+     background-color: white;
+}
+
+.footer__contenedor p:hover{
+    background-color: rgb(27, 62, 84);
+    color:white;
+    box-shadow: 0 0 50px black;
+}
+
+.footer__contenedorIconos li{
+    list-style: none;
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/*Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+
+}

@@ -1,0 +1,29 @@
+.sobre_nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.container_sobre_nosotros {
+  display: flex;
+  width: 50%;
+  padding: 1rem;
+  margin-top: 1rem;
+  line-height: 1.5rem; /*espaciado entre parrafos*/
+  font-size: large;
+  color: black;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+  .container_sobre_nosotros {
+    width: 100%;
+    padding: 1;
+    margin-top: 1rem; /* margen a lo alto */
+    line-height: 1.5rem; /* espaciado entre los parrafos del texto */
+    font-size: small; /* tamaño de la fuente */
+    flex-direction: column;
+  }
+}

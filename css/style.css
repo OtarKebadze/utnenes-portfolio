@@ -1,0 +1,94 @@
+@import url("./contacto.css");
+@import url("./estudios.css");
+@import url("./experiencias.css");
+@import url("./sobre_nosotros.css");
+@import url("./footer.css");
+
+:root {
+  --body--bg-color: lch(64.98% 47.33 267.97 / 0.761);
+  --text-color: black;
+  --colorh1-color: black;
+}
+body {
+  background: var(--body--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--colorh1-color);
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.navigation li{
+  font-size: 1rem;
+  width: 100px;
+  text-align: center;
+  padding: .5rem;
+  border-radius: 0.5rem;
+  background: #f0eaea1a;
+  box-shadow: 0 0 1.250rem rgba(0, 0, 0, 0.5);
+}
+
+.img-perfil {
+  border-radius: 50%;
+}
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+  .titulo {
+    justify-content: center;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  } 
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titulo {
+    justify-content: center;
+  }
+
+  .navigation {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+}
+
+/*Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+  .titulo {
+    justify-content: flex-start;
+  }
+
+  .navigation {
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin: 0 1rem;
+  }
+}
